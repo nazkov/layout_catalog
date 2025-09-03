@@ -1,6 +1,6 @@
 .card {
   box-sizing: border-box;
-  width: 200px;
+  width: $card-width;
   border: 1px solid #f3f3f3;
   margin: 0 auto;
   padding: 16px;
@@ -12,7 +12,7 @@
     transform: scale(1.2);
   }
 
-  &-about-product {
+  &__title {
     font-size: 12px;
     line-height: 18px;
     font-weight: 500;
@@ -22,11 +22,11 @@
     transition: color 0.3s;
   }
 
-  &:hover &-about-product {
+  &:hover &__title {
     color: $card-hover-color;
   }
 
-  &-product-code {
+  &__code {
     color: $secondary;
     font-size: 10px;
     line-height: 14px;
@@ -35,7 +35,7 @@
     margin-bottom: 0;
   }
 
-  &-review {
+  &__review {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@
     }
   }
 
-  &-price {
+  &__price {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,29 +72,29 @@
       margin: 0;
     }
   }
-}
 
-.link-buy {
-  box-sizing: border-box;
-  display: block;
-  text-align: center;
-  width: 166px;
-  height: 40px;
-  border-radius: 5px;
-  font-size: 14px;
-  line-height: 40px;
-  font-weight: 700;
-  color: $white;
-  background-color: $blue-accent;
-  border: $blue-accent;
-  margin-top: 16px;
-  transition:
-    background-color 0.3s,
-    color 0.3s;
-
-  &:hover {
-    color: $blue-accent;
-    background-color: $white;
+  &__buy {
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    width: 166px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    color: $white;
+    background-color: $blue-accent;
     border: 1px solid $blue-accent;
+    margin-top: 16px;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+
+    &:hover {
+      color: $blue-accent;
+      background-color: $white;
+      border: 1px solid $blue-accent;
+    }
   }
 }
