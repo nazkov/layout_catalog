@@ -41,7 +41,7 @@
     line-height: 60px;
     height: 60px;
     text-transform: uppercase;
-    transition: color 0.3s;
+    transition: color $transition-duration;
 
     &:hover,
     &.is-active {
